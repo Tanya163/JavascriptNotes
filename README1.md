@@ -121,36 +121,37 @@ Event listeners are among the most frequently used JavaScript structures in web
 
 Event listener and event handler are two terms that cause confusion. ... A listener watches for an event to be fired. The handler is responsible for dealing with the event.
 
-Const Butts=document.querySelector(‘.button’);            //get the first element of the class using
+- Const Butts=document.querySelector(‘.button’);            //get the first element of the class using
                                                                                              //querySelector
-Butts.addEventListener(‘click’,call_back_function);
+- Butts.addEventListener(‘click’,call_back_function);
 
-addEventListener(‘click’,function() {           //anonymous function
-Console.log(‘It got clicked’}
-);
+- addEventListener(‘click’,function() {           //anonymous function
+- console.log(‘It got clicked’}
+- );
 
-Function handleClick()
-{
-Console.log(‘clicked’);
-}
+- Function handleClick()
+- {
+- Console.log(‘clicked’);
+- }
 
-Butts.addEventListener(‘click’,handleClick);         //name function
+- Butts.addEventListener(‘click’,handleClick);         //name function
 
 
-Const hey=() => console.log(‘hey’)                  // fat arrow function
+- Const hey=() => console.log(‘hey’)                  // fat arrow function
 
 
 In order to listen to multiple buttons or elements we use querySelectorALL()
 
 In order to attach event handler to all the elements or buttons we need to loop them using foreach()
 
-eg.   buttons.forEach(function(button)   {         //button is just a parameter to traverse all the 
+eg.   
+- buttons.forEach(function(button)   {         //button is just a parameter to traverse all the 
                                                                               //elements in buttons
-Console.log(‘hey’);
-buttons.addEventListener(‘click’, function {  console.log(‘hey again’)        //this anonymous 
-                                                                                                                           //function is known as  
-                                                                                                                           //event handler 
-});
+- Console.log(‘hey’);
+- buttons.addEventListener(‘click’, function {  console.log(‘hey again’)        //this anonymous 
+                                                                              //function is known as  
+                                                                             //event handler 
+- });
 
 
 
@@ -170,26 +171,27 @@ We can stop bubbling by using stopPropagation() function
 
 
 **Event capture**: goes from the root of the DOM tree to way down till the target node.
-Eg: window.addEventListener
-(
-‘click’, function(event) 
-{ console.log(‘you clicked the window’) 
-},
-{capture:true} 
-);
+Eg: 
+- window.addEventListener
+- (
+- ‘click’, function(event) 
+- { console.log(‘you clicked the window’) 
+- },
+- {capture:true} 
+- );
 
 Console.log(e.currentTarget) and console.log(this) to get the current  node but this keyword has a downside with the arrow function related to its scope.  Recommended to not use this in eventListener’s callback function ??
 
-//confirm
-//Prompt
-//console.dir(event.target)
-//includes
+- //confirm
+- //Prompt
+- //console.dir(event.target)
+- //includes
 Events :
-//keyup
-//keydown
-//focus
-//blur
-//event.key
+- //keyup
+- //keydown
+- //focus
+- //blur
+- //event.key
 
 **event.PreventDefault()**
 
@@ -202,9 +204,9 @@ Events :
 * A ddition
 * S ubration
 
-//.replace(/\s/g,’-‘)    //regex-regular expression
-//console.group()
-//console.groupend()
+- //.replace(/\s/g,’-‘)    //regex-regular expression
+- //console.group()
+- //console.groupend()
 
 Empty string is not true it is  not false its an empty string
 **Truthy**: which are equated to true I.e. all numbers and any value , empty array and empt object also.
@@ -216,11 +218,11 @@ And ! Operator coerces any datatype into a true boolean(either true or false).
 **Shortcircuiting** (with if condition and &&) and its solution:
 Use a single &. That is a bitwise operator. It will execute all conditions and then return a bitwise sum of the results.
 
- function checkAll() {
-    return checkSomething(1)
-      & checkSomething(2)
-      & checkSomething(3)
- }
+ - function checkAll() {
+ -   return checkSomething(1)
+ -    & checkSomething(2)
+ -    & checkSomething(3)
+ -    }
 
 
 The window object allows execution of code at specified time intervals.
@@ -231,8 +233,8 @@ The two key methods to use with JavaScript are:
 **3. clearTimeout(reference to the setTimeout function i.e in a variable)**:for stoping setTimeout.
 
 How to stop an interval after x seconds:
- setTimeout(function() {
-clearInterval( reference var name)  } , 3000);
+ - setTimeout(function() {
+- clearInterval( reference var name)  } , 3000);
 
 
 
