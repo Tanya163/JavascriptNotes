@@ -115,7 +115,7 @@ document.getElementsByClassName(name):	Find elements by class name
 
 ## Module - 5
 
-*Event Listeners*: 
+**Event Listeners**: 
 Event listeners are among the most frequently used JavaScript structures in web design. They allow us to add interactive functionality to HTML elements by “listening” to different events that take place on the page, such as when the user clicks a button, presses a key, or when an element loads.
 
 
@@ -159,9 +159,9 @@ Target (the event which is being fired) and currentTarget(the main element) diff
 target is the element that triggered the event (e.g., the user clicked on) currentTarget is the element that the event listener is attached to
 Why  event.target === event.currentTarget are same not always only when there are no other tags attached.
 
-*Propagation*: Flow to events getting triggered
+**Propagation**: Flow to events getting triggered
 
-*Event bubbling* :  events get triggered from child to parents from bottom to up
+**Event bubbling** :  events get triggered from child to parents from bottom to up
 There are two ways of event propagation in the HTML DOM, bubbling and capturing.
 Event propagation is a way of defining the element order when an event occurs. If you have a <p> element inside a <div> element, and the user clicks on the <p> element, which element's "click" event should be handled first?
 In bubbling the inner most element's event is handled first and then the outer: the <p> element's click event is handled first, then the <div> element's click event.
@@ -169,7 +169,7 @@ In bubbling the inner most element's event is handled first and then the outer
 We can stop bubbling by using stopPropagation() function 
 
 
-*Event capture*: goes from the root of the DOM tree to way down till the target node.
+**Event capture**: goes from the root of the DOM tree to way down till the target node.
 Eg: window.addEventListener
 (
 ‘click’, function(event) 
@@ -191,29 +191,29 @@ Events :
 //blur
 //event.key
 
-*event.PreventDefault()*
+**event.PreventDefault()**
 
 ## Module-7
 
-*B brackets
-*E exponents
-*D ivision
-*M ultiplication
-*A ddition
-*S ubration
+* B brackets
+* E exponents
+* D ivision
+* M ultiplication
+* A ddition
+* S ubration
 
 //.replace(/\s/g,’-‘)    //regex-regular expression
 //console.group()
 //console.groupend()
 
 Empty string is not true it is  not false its an empty string
-*Truthy* : which are equated to true I.e. all numbers and any value , empty array and empt object also.
-*Falsey*  : which equates to false eg : 0 for numbers and empty string for strings. , undefined , null , NaN 
+**Truthy**: which are equated to true I.e. all numbers and any value , empty array and empt object also.
+**Falsey**  : which equates to false eg : 0 for numbers and empty string for strings. , undefined , null , NaN 
 
-*Coercion*: converting something of a different datatype into another type
+**Coercion** converting something of a different datatype into another type
 And ! Operator coerces any datatype into a true boolean(either true or false).
 
-*Shortcircuiting* (with if condition and &&) and its solution:
+**Shortcircuiting** (with if condition and &&) and its solution:
 Use a single &. That is a bitwise operator. It will execute all conditions and then return a bitwise sum of the results.
 
  function checkAll() {
@@ -226,9 +226,9 @@ Use a single &. That is a bitwise operator. It will execute all conditions and t
 The window object allows execution of code at specified time intervals.
 These time intervals are called timing events.
 The two key methods to use with JavaScript are:
-__* setTimeout(function, milliseconds)__ Executes a function, after waiting a specified number of milliseconds.
-__* setInterval(function, milliseconds)__ Same as setTimeout(), but repeats the execution of the function continuously. Will not run immediately so you have to make your own immediate function by calling the call_back function immediately inside your customised function.
-__* clearTimeout(reference to the setTimeout function i.e in a variable)__ for stoping setTimeout.
+**1. setTimeout(function, milliseconds)** :Executes a function, after waiting a specified number of milliseconds.
+**2. setInterval(function, milliseconds)** :Same as setTimeout(), but repeats the execution of the function continuously. Will not run immediately so you have to make your own immediate function by calling the call_back function immediately inside your customised function.
+**3. clearTimeout(reference to the setTimeout function i.e in a variable)**:for stoping setTimeout.
 
 How to stop an interval after x seconds:
  setTimeout(function() {
